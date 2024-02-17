@@ -1,0 +1,21 @@
+{
+  "name": "ts5.0-decorators-test",
+  "version": "0.0.1",
+  "description": "Bundling with ts5.0 decorators",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "tsc && node dist/index.js",
+    "test:esbuild": "tsx esbuild/test.ts && node ./dist/esbuild.js",
+    "test:rollup": "rollup -c && node ./dist/rollup.js"
+  },
+  "author": "michaelhan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "esbuild": "^0.20.0",
+    "rollup": "^4.12.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  }
+}
